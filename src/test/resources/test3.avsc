@@ -1,0 +1,88 @@
+{
+  "name": "MyClass",
+  "type": "record",
+  "namespace": "com.acme.avro",
+  "fields": [
+    {
+      "name": "payload",
+      "type": {
+        "name": "payload",
+        "type": "record",
+        "fields": [
+          {
+            "name": "orders",
+            "type": {
+              "type": "array",
+              "items": {
+                "name": "orders_record",
+                "type": "record",
+                "fields": [
+                  {
+                    "name": "order_id",
+                    "type": "string"
+                  },
+                  {
+                    "name": "created_at",
+                    "type": "string"
+                  },
+                  {
+                    "name": "customer_id",
+                    "type": "string"
+                  },
+                  {
+                    "name": "line_items",
+                    "type": {
+                      "type": "array",
+                      "items": {
+                        "name": "line_items_record",
+                        "type": "record",
+                        "fields": [
+                          {
+                            "name": "product_id",
+                            "type": "string"
+                          },
+                          {
+                            "name": "price",
+                            "type": "string"
+                          },
+                          {
+                            "name": "quantity",
+                            "type": "string"
+                          },
+                          {
+                            "name": "tax_lines",
+                            "type": {
+                              "type": "array",
+                              "items": {
+                                "name": "tax_lines_record",
+                                "type": "record",
+                                "fields": [
+                                  {
+                                    "name": "price",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "name": "rate",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "name": "title",
+                                    "type": "string"
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

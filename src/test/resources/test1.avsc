@@ -1,0 +1,307 @@
+{
+  "name": "MyClass",
+  "type": "record",
+  "namespace": "com.acme.avro",
+  "fields": [
+    {
+      "name": "medications",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "medications_record",
+          "type": "record",
+          "fields": [
+            {
+              "name": "aceInhibitors",
+              "type": {
+                "type": "array",
+                "items": {
+                  "name": "aceInhibitors_record",
+                  "type": "record",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "type": "string"
+                    },
+                    {
+                      "name": "strength",
+                      "type": "string"
+                    },
+                    {
+                      "name": "dose",
+                      "type": "string"
+                    },
+                    {
+                      "name": "route",
+                      "type": "string"
+                    },
+                    {
+                      "name": "sig",
+                      "type": "string"
+                    },
+                    {
+                      "name": "pillCount",
+                      "type": "string"
+                    },
+                    {
+                      "name": "refills",
+                      "type": "string"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "antianginal",
+              "type": {
+                "type": "array",
+                "items": {
+                  "name": "antianginal_record",
+                  "type": "record",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "type": "string"
+                    },
+                    {
+                      "name": "strength",
+                      "type": "string"
+                    },
+                    {
+                      "name": "dose",
+                      "type": "string"
+                    },
+                    {
+                      "name": "route",
+                      "type": "string"
+                    },
+                    {
+                      "name": "sig",
+                      "type": "string"
+                    },
+                    {
+                      "name": "pillCount",
+                      "type": "string"
+                    },
+                    {
+                      "name": "refills",
+                      "type": "string"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "anticoagulants",
+              "type": {
+                "type": "array",
+                "items": {
+                  "name": "anticoagulants_record",
+                  "type": "record",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "type": "string"
+                    },
+                    {
+                      "name": "strength",
+                      "type": "string"
+                    },
+                    {
+                      "name": "dose",
+                      "type": "string"
+                    },
+                    {
+                      "name": "route",
+                      "type": "string"
+                    },
+                    {
+                      "name": "sig",
+                      "type": "string"
+                    },
+                    {
+                      "name": "pillCount",
+                      "type": "string"
+                    },
+                    {
+                      "name": "refills",
+                      "type": "string"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "betaBlocker",
+              "type": {
+                "type": "array",
+                "items": {
+                  "name": "betaBlocker_record",
+                  "type": "record",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "type": "string"
+                    },
+                    {
+                      "name": "strength",
+                      "type": "string"
+                    },
+                    {
+                      "name": "dose",
+                      "type": "string"
+                    },
+                    {
+                      "name": "route",
+                      "type": "string"
+                    },
+                    {
+                      "name": "sig",
+                      "type": "string"
+                    },
+                    {
+                      "name": "pillCount",
+                      "type": "string"
+                    },
+                    {
+                      "name": "refills",
+                      "type": "string"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "diuretic",
+              "type": {
+                "type": "array",
+                "items": {
+                  "name": "diuretic_record",
+                  "type": "record",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "type": "string"
+                    },
+                    {
+                      "name": "strength",
+                      "type": "string"
+                    },
+                    {
+                      "name": "dose",
+                      "type": "string"
+                    },
+                    {
+                      "name": "route",
+                      "type": "string"
+                    },
+                    {
+                      "name": "sig",
+                      "type": "string"
+                    },
+                    {
+                      "name": "pillCount",
+                      "type": "string"
+                    },
+                    {
+                      "name": "refills",
+                      "type": "string"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "mineral",
+              "type": {
+                "type": "array",
+                "items": {
+                  "name": "mineral_record",
+                  "type": "record",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "type": "string"
+                    },
+                    {
+                      "name": "strength",
+                      "type": "string"
+                    },
+                    {
+                      "name": "dose",
+                      "type": "string"
+                    },
+                    {
+                      "name": "route",
+                      "type": "string"
+                    },
+                    {
+                      "name": "sig",
+                      "type": "string"
+                    },
+                    {
+                      "name": "pillCount",
+                      "type": "string"
+                    },
+                    {
+                      "name": "refills",
+                      "type": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "labs",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "labs_record",
+          "type": "record",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "time",
+              "type": "string"
+            },
+            {
+              "name": "location",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "imaging",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "imaging_record",
+          "type": "record",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "time",
+              "type": "string"
+            },
+            {
+              "name": "location",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
