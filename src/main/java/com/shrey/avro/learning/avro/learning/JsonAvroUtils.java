@@ -4,7 +4,7 @@ import org.apache.avro.Schema;
 import org.apache.avro.generic.GenericData;
 import tech.allegro.schema.json2avro.converter.JsonAvroConverter;
 
-public class JsonAvroConverterUtils {
+public class JsonAvroUtils {
 
     // Json to Avro converter
     private static final JsonAvroConverter converter = new JsonAvroConverter();
