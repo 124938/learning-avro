@@ -27,6 +27,9 @@ public class JsonAvroUtilsTest {
         String jsonData = JsonAvroUtils.toJson(JsonAvroUtils.toAvroBytes(schema, json), schema);
         System.out.println("JSON : "+jsonData);
         Assert.assertNotNull(jsonData);
+
+        // Write AVRO file
+        JsonAvroUtils.writeAvroFile(schema, avroData, "src/test/resources/test1_"+System.currentTimeMillis()+".avro");
     }
 
     @Test
@@ -46,6 +49,9 @@ public class JsonAvroUtilsTest {
         String jsonData = JsonAvroUtils.toJson(JsonAvroUtils.toAvroBytes(schema, json), schema);
         System.out.println("JSON : "+jsonData);
         Assert.assertNotNull(jsonData);
+
+        // Write AVRO file
+        JsonAvroUtils.writeAvroFile(schema, avroData, "src/test/resources/test2_"+System.currentTimeMillis()+".avro");
     }
 
     @Test
@@ -65,5 +71,8 @@ public class JsonAvroUtilsTest {
         String jsonData = JsonAvroUtils.toJson(JsonAvroUtils.toAvroBytes(schema, json), schema);
         System.out.println("JSON : "+jsonData);
         Assert.assertNotNull(jsonData);
+
+        // Write AVRO file
+        JsonAvroUtils.writeAvroFile(schema, avroData, "src/test/resources/test3_"+System.currentTimeMillis()+".avro");
     }
 }
